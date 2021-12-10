@@ -2,7 +2,7 @@
   "required_api_version": "^2.0.0",
   "name": "SSH Launcher",
   "description": "Launch SSH connections.",
-  "developer_name": "Jonas Bendlin",
+  "developer_name": "Jonas Bendlin, Petrarca",
   "icon": "images/icon.png",
   "options": {
 	"query_debounce": 0.1
@@ -51,7 +51,7 @@
 				"text": "No"
 			}
 		],
-		"default_value": "True"
+		"default_value": "False"
 	}
   ]
 }
