@@ -74,12 +74,12 @@ class SshExtension(Extension):
         return hosts
 
     def launch_terminal(self, addr):
-        logger.debug("Launching connection " + addr)
+        logger.debug("Launching connection: " + addr)
         shell = os.environ["SHELL"]
         home = expanduser("~")
 
         cmd = self.terminal + self.terminal_arg + self.terminal_cmd.replace("%SHELL", shell).replace("%CONN", addr)
-
+        logger.debug("Launching connection with cmd: " + cmd)
         if self.terminal:
             subprocess.Popen([shlex.split(cmd)])
 
